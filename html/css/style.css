@@ -4,6 +4,8 @@
     --color-heading: #1b0760;
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
+    --color-border: #ccc;
+    --border-radius: 30px;
 }
 *,
 *::before,
@@ -201,6 +203,39 @@ a{
 }
 @media screen and (min-width:1024) {
     .btn{
+        font-size: 1.5rem;
+    }
+}
+/*inputs*/
+.input{
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    color: var(--color-heading);
+    font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+}
+::placeholder{
+    color: #cdcbd7;
+}
+/*div is a block lvl element so the border grew to entire width.. to max the input group do same i used flex and flex growth*/
+.input-group{
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+}
+/* had to remove border from input so i could fit search in it so i used nesting for input groups*/
+.input-group .input{
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem; /*text spacing from border*/
+}
+/*margin around button made it ugly had to use nesting */
+.input-group .btn{
+    margin: 4px;
+}
+@media screen and (min-width:1024px) {
+    .input{
         font-size: 1.5rem;
     }
 }
