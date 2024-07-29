@@ -121,3 +121,25 @@ a{
         padding-left: 0;
     }
 }
+/*icons*/
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.icon--primary{
+    fill: var(--color-primary);
+    /*fill is used to set color in svg files*/
+
+}
+.icon-container{
+    background: #f3f9fa;
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    /* does not encompass element reason height and width don't apply to inline solu below*/
+    display: inline-flex;
+    /* used inline-block and didn't use block because we might put icon next to an element ant it will take up all space*/
+    /*but i need to used justify content to place item in center so i used inline-flex*/
+    justify-content: center;
+    align-items: center;
+}
