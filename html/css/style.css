@@ -95,3 +95,17 @@ a{
         font-size: 1.5rem;
     }
 }
+/*lists*/
+.list{
+    padding-left: 0;
+    color: var(--color-heading);
+    list-style: none;
+}
+.list--inline .list__item{
+    display: inline-block;
+    /* won't be able to add margins with inline*/
+    margin-right: 2rem;
+}
+.list--tick{
+    list-style-image: url();
+}
