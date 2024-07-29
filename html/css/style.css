@@ -5,6 +5,11 @@
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
 }
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
 /*typography*/
 html{
     /* 62.5% of 16 =10px*/
@@ -142,4 +147,60 @@ a{
     /*but i need to used justify content to place item in center so i used inline-flex*/
     justify-content: center;
     align-items: center;
+}
+/*buttons*/
+.btn{
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    /*to sepreate from other element ver*/
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    /* btn--block used on a doesn't put text in center solu below*/
+    text-align: center;
+    white-space: nowrap;
+}
+.btn-primary{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: #3a8ffd;
+}
+.btn-secondary{
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+.btn-secondary:hover{
+    background-color: #00c8eb;
+}
+.btn-accent{
+    background-color: var(--color-accent);
+    color: #fff;
+}
+.btn-accent:hover{
+    background-color: #ec3000;
+}
+.btn--block{
+    width: 100%;
+    display: inline-block;
+    /*a elements are inline by defualt and if u give inline elements width it won't apply*/
+
+}
+.btn--outline{
+    background-color: #fff;
+    color: var(--color-heading);
+    border: 2px solid var(--color-heading);
+}
+.btn--outline:hover{
+    background-color: var(--color-heading);
+    color: #fff;
+}
+@media screen and (min-width:1024) {
+    .btn{
+        font-size: 1.5rem;
+    }
 }
