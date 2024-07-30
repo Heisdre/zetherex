@@ -136,10 +136,18 @@ a{
     width: 40px;
     height: 40px;
 }
+/*icon small was created because of quote icon*/
+.icon--small{
+    height: 30px;
+    width: 30px;
+}
 .icon--primary{
     fill: var(--color-primary);
     /*fill is used to set color in svg files*/
 
+}
+.icon--white{
+    fill: #fff;
 }
 .icon-container{
     background: #f3f9fa;
@@ -152,6 +160,9 @@ a{
     /*but i need to used justify content to place item in center so i used inline-flex*/
     justify-content: center;
     align-items: center;
+}
+.icon-container--accent{
+    background-color: var(--color-accent);
 }
 /*buttons*/
 .btn{
@@ -383,4 +394,32 @@ color: #fff;
     .grid--1x3{
         grid-template-columns: repeat(3, 1fr);
     }
+}
+/*testimonials*/
+.testimonial{
+    padding: 3rem; /*padding btwn testimonial and container*/
+}
+.testimonial__image{
+    position: relative;
+}
+/* had to use the > (direct child tag) to refer to the image as i needed a container to postion the quote icon and didn't want too many classes*/
+.testimonial__image >img {
+    width: 100%;
+    /* the image was not responsive so i used 100% to make it fill it"s grid space in the process also making it resize with it*/
+}
+/* again used direct chid to terget icon container*/
+.testimonial__image > .icon-container{
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+    /* the value we set for icon previously was 64px so i divide it by 2 to get the offset of icon placement used negative value to place correctly*/
+}
+@media screen and (min-width:764px) {
+   .testimonial .quote,
+   .testimonial .quote__author{
+    font-size: 2.4rem;
+   } 
+   .testimonial .quote{
+    margin-left: 6rem;
+   }
 }
