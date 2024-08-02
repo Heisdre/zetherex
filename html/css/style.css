@@ -206,6 +206,10 @@ a{
     /*a elements are inline by defualt and if u give inline elements width it won't apply*/
 
 }
+.btn--stretched{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
 .btn--outline{
     background-color: #fff;
     color: var(--color-heading);
@@ -422,4 +426,40 @@ color: #fff;
    .testimonial .quote{
     margin-left: 6rem;
    }
+}
+/*call outs*/
+.callout{
+    padding: 4rem;
+    border-radius: 5px;
+}
+.callout--primary{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.callout__heading{
+    color: #fff;
+    margin-top: 0;
+    font-size: 3rem;
+}
+/* so the justify and align content of the grid is set to strech my deafult making it to strech n fill grid we used align self to allign just the a or button itself */
+.callout .btn {
+    justify-self: center;
+    align-self: center;
+    /*very important do not put the anchor for the button in a div it will break the code the div block will overide the grid display*/
+}
+.callout__content{
+    text-align: center;
+}
+@media screen and (min-width:768px) {
+    /*on the desktop version the button is too small so the rest of the fr space is wasted so i use auto on grid to
+    make it only take as much space as it needs and justify self to start to make it start atfer text*/
+    .callout .grid--1x2{
+        grid-template-columns: 1fr auto;
+    }
+    .callout__content{
+        text-align: left;
+    }
+    .callout .btn{
+        justify-self: start;
+    }
 }
