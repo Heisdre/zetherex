@@ -463,3 +463,34 @@ color: #fff;
         justify-self: start;
     }
 }
+/*collapsible*/
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+}
+.collapsible__heading{
+    margin-top: 0;
+    font-size: 3rem;
+}
+.collapsible__chevron{
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+.collapsible__content{
+ /* orignally i used  display: none; but wanted to add an animaation but was not able to because this is no display
+ so it won't apply instead i used max-height but the content was still visible because of overflow so i set it to hidden*/
+ max-height: 0;
+ overflow: hidden;
+ opacity: 0;
+ transition: all 0.3s;
+ /*to make it better i added opacity and changed transition to all so the time will be applied to all animations*/
+}
+.collapsible--expanded .collapsible__chevron{
+    transform: rotate(0);
+}
+.collapsible--expanded .collapsible__content{
+    max-height: 100vh;
+    opacity: 1;
+    /* note i used max height because  if i used just height and set it to 100vh it will take up the enitire vh but
+    now that i used max the height will be dertmined by the content and i can now add transition effects*/
+}
