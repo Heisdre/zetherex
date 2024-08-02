@@ -494,3 +494,48 @@ color: #fff;
     /* note i used max height because  if i used just height and set it to 100vh it will take up the enitire vh but
     now that i used max the height will be dertmined by the content and i can now add transition effects*/
 }
+/*blocks*/
+.block{
+    /* so i used an in line variable check skewed block to find out why incase u forget future dumb me*/
+    --padding-vertical:6rem;
+    padding: var(--padding-vertical) 2rem;
+}
+.block__header{
+    text-align: center;
+    /* so i wrped the 2 elements that need to be in the center and gave it a class because if i apply text align directly all the elements in the 
+    block will have their text centered*/ 
+}
+.block__heading{
+    margin-top: 0;
+}
+.block--dark{
+    background: #000;
+    color: #7b858b;
+}
+.block--dark .block__heading{
+    color: #fff;
+}
+.block--skewed-right {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    /* u forgot didn't u lol  so the padding of paragraph in the skewed block was akward and i wanted to add an extra padding to the bottom
+    so i decided to use a variable so i can apply the caculation fumnction an add a number of rem to the bottom this way if i ever have to maintain the code
+    i only need to change the variable genius huh dumb me*/
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+.block--skewed-left {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    /* u forgot didn't u lol  so the padding of paragraph in the skewed block was akward and i wanted to add an extra padding to the bottom
+    so i decided to use a variable so i can apply the caculation fumnction an add a number of rem to the bottom this way if i ever have to maintain the code
+    i only need to change the variable genius huh dumb me*/
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+.container {
+    max-width: 1140px;
+    /* so very important the  width of the block strecthed throught the vw making the content streched but that is not what we want we want the 
+    content to to only stay in the alloted space so we created this contrainer class style ... notes 1. the container is not linked to any specfic
+    element and can be used anywhere we want a max width of what is in the container ...2. we can create variation depending on the situation and ...
+    the most impotant 3 we cannot use this on colored background blocks so we wrap the content in something and give it this class instead work smarter not harder*/
+    margin: 0 auto;
+    /* so we applied the container and the content  or block shifted  left so we set the horizontal margin to 0 so that the umm remaining space will be shared 
+    equally btw the 2 sides*/
+}
