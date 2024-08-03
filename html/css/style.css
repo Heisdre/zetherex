@@ -136,6 +136,9 @@ a{
     width: 40px;
     height: 40px;
 }
+.z--icon{
+    height: 90px;
+}
 /*icon small was created because of quote icon*/
 .icon--small{
     height: 30px;
@@ -538,4 +541,59 @@ color: #fff;
     margin: 0 auto;
     /* so we applied the container and the content  or block shifted  left so we set the horizontal margin to 0 so that the umm remaining space will be shared 
     equally btw the 2 sides*/
+}
+/*nav*/
+.nav{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    align-items: center;
+}
+.nav__list{
+    width: 100%;
+    margin: 0;
+}
+.nav__item{
+    padding: 0.5rem 2rem; /* items where so close to border used vertical padding*/
+    border-bottom: 1px solid #222;
+    /* set color here before but wont apply because links have they own color solu below*/
+}
+.nav__item>a{
+    color: #d2d0db;
+    transition: color 0.4s;
+}
+.nav__item>a:hover {
+    color: #fff;
+}
+.nav--toggler{
+    opacity: .5;
+    transition: box-shadow .15s;
+    cursor: pointer;
+}
+/* so i wanted to make sure the opcity touch only applied to the nav toggler so i used a double class selector without space*/
+.nav.collapsible--expanded .nav--toggler{
+    opacity: 1;
+    box-shadow: 0 0 0 3px #666;
+    border-radius: 5px;
+}
+.nav__brand{
+    transform: translateY(1px); /* used to move up or down u get the pic*/
+}
+@media screen and (min-width:768px) {
+    .nav--toggler{
+        display: none; /*hid the nav toggler for wider screens*/
+    }
+    .nav__list{
+        width: auto;
+        display: flex;
+        font-size: 1.6rem;
+        /* so the list was still invisble until click still following the rules of expanded state so i fixed it below*/
+        max-height: 100%;
+        opacity: 1;
+    }
+    .nav__item{
+        border: 0;
+    }
 }
