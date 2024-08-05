@@ -533,6 +533,7 @@ color: #fff;
 }
 .block__header{
     text-align: center;
+    margin-bottom: 4rem;
     /* so i wrped the 2 elements that need to be in the center and gave it a class because if i apply text align directly all the elements in the 
     block will have their text centered*/ 
 }
