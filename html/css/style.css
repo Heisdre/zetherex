@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 /*typography*/
+::selection{
+    background-color: var(--color-primary);
+    color: #fff;
+}
 html{
     /* 62.5% of 16 =10px*/
     font-size: 62.5%;
@@ -109,7 +113,6 @@ a{
 /*lists*/
 .list{
     padding-left: 0;
-    color: var(--color-heading);
     list-style: none;
 }
 .list--inline .list__item{
@@ -121,6 +124,7 @@ a{
     list-style-image: url(../images/tick.svg);
     /*tick was hidden used padding to bring it in*/
     padding-left: 3rem;
+    color: var(--color-heading);
 }
 /*using nesting to set space btwn list and tick*/
 .list--tick .list__item{
@@ -359,6 +363,7 @@ color: #fff;
 /*media*/
 .media{
     display: flex;
+    margin-bottom: 4rem;
 }
 .media__title{
     margin-top: 0;
@@ -542,14 +547,14 @@ color: #fff;
     color: #fff;
 }
 .block--skewed-right {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
     /* u forgot didn't u lol  so the padding of paragraph in the skewed block was akward and i wanted to add an extra padding to the bottom
     so i decided to use a variable so i can apply the caculation fumnction an add a number of rem to the bottom this way if i ever have to maintain the code
     i only need to change the variable genius huh dumb me*/
     padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 .block--skewed-left {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
     /* u forgot didn't u lol  so the padding of paragraph in the skewed block was akward and i wanted to add an extra padding to the bottom
     so i decided to use a variable so i can apply the caculation fumnction an add a number of rem to the bottom this way if i ever have to maintain the code
     i only need to change the variable genius huh dumb me*/
@@ -621,9 +626,6 @@ color: #fff;
     }
 }
 /*hero*/
-.hero{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
 .hero__tagline{
     font-size: 2rem;
     color: #b9c3cf;
@@ -702,5 +704,21 @@ color: #fff;
        margin-left: 4rem;
        margin-top: 0.5rem;
        max-width: 380px;
+    }
+}
+/*showcase block*/
+.block-showcase__image >img{
+  width: 100%;
+}
+@media screen and (min-width:768px) {
+    .block-showcase .grid{
+        grid-template-columns: 50% 50%;
+    }
+    .block-showcase__image{
+        justify-self: end;
+    }
+    .block-showcase__image > img{
+    width: auto;
+    max-width: 700px;
     }
 }
