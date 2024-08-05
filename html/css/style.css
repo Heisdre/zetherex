@@ -177,11 +177,18 @@ a{
     font-weight: 600;
     /*to sepreate from other element ver*/
     margin: 1rem 0;
+    outline: 0;
     padding: 2rem 3rem;
     text-transform: uppercase;
     /* btn--block used on a doesn't put text in center solu below*/
     text-align: center;
     white-space: nowrap;
+}
+.btn .icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 .btn--primary{
     background-color: var(--color-primary);
@@ -250,7 +257,7 @@ a{
 .input-group .input{
     border: 0;
     flex-grow: 1;
-    padding: 1.5rem 1rem; /*text spacing from border*/
+    padding: 1.5rem 2rem; /*text spacing from border*/
 }
 /*margin around button made it ugly had to use nesting */
 .input-group .btn{
@@ -622,5 +629,27 @@ color: #fff;
     .hero__image{
         margin-left: 100px;
         margin-top: 180px;
+    }
+}
+/*domain block*/
+.block-domain .input-group{
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+.block-domain__price{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    font-size: 2rem;
+    font-weight: 600;
+    justify-items: center;
+}
+@media screen and (min-width:768px) {
+    .block-domain__price{
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        max-width: 700px;
+        margin: 0 auto;
     }
 }
