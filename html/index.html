@@ -6,12 +6,400 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<meta name="description" content="Discover top-quality web development, digital marketing, and content creation services tailored to your needs. Our expert team delivers exceptional results, ensuring your online success.">
+<title>ZYNTHEREX</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  >
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" >
 </head>
 <body>
- 
+ <header>
+    <nav class="nav collapsible">
+        <a href="/">
+          <img class="z--icon nav__brand" src="images/file-removebg-preview.png" alt="">
+        </a>
+        <svg class="icon icon--white nav--toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">hosting</a></li>
+          <li class="nav__item"><a href="#">vps</a></li>
+          <li class="nav__item"><a href="#">domain</a></li>
+          <li class="nav__item"><a href="#">pricing</a></li>
+      </ul>
+    </nav>
+ </header>
+ <section class="block block--dark block--skewed-left hero">
+    <div class="container grid grid--1x2">
+     <header class="block__header hero__content">
+         <h1 class="block__heading animate__animated animate__rubberBand animate__delay-1s animate__repeat-1">Where Technology Meets Imagination</h1>
+         <p class="hero__tagline animate__animated animate__shakeX animate__repeat-2">"Transforming Ideas Into Reality"</p>
+         <a href="#" class="btn btn--accent btn--stretched">JOIN US</a>
+        </header>
+         <picture>
+            <source
+             type="image/webp" 
+             srcset="images/1.webp" 
+            >
+            <source
+             type="image/png" 
+             srcset="images/1.png" 
+            >
+            <img class="hero__image" src="images/1.png" alt="">
+        </picture>
+    </div>
+</section>
+<section class="block container block-domain" data-aos="fade-up" data-aos-duration="4000">
+    <header class="block__header">
+        <h2 class="animate__animated animate__bounceInDown animate__delay-2s">starting at 9$ per month</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore.</p>
+    </header>
+    <div class="input-group">
+        <input type="text" class="input" placeholder="enter text">
+        <button class="btn btn--accent">
+            <svg class="icon icon--white">
+                <use xlink:href="images/sprite.svg#search"></use>
+            </svg>search</button>
+    </div>
+    <ul class="list block-domain__price">
+        <li><span class="badges badges--secondary">.com $9</span></li>
+        <li>.sg $10</li>
+        <li>.space $11</li>
+        <li>.info $14</li>
+        <li>.net $10</li>
+        <li>.xyz $10</li>
+    </ul>
+</section>
+<section class="block container block-plans">
+    <div class="grid grid--1x3">
+        <div class="plan">
+            <div data-aos="zoom-in" data-aos-duration="4000">
+                <div class="card card--secondary">
+                  <header class="card__header">
+                   <h3 class="plan__name">entry</h3>
+                   <span class="plan__price">$14</span>
+                   <span class="plan__billing-cycle">/month</span>
+                   <span class="badges badges--secondary badges--small">10%off</span>
+                   <span class="plan__description">east start on the cloud</span>
+                  </header>
+                  <div class="card__body">
+                      <ul class="list list--tick">
+                          <li class="list__item">Unlimited websites</li>
+                          <li class="list__item">Unlimited bandwidths</li>
+                          <li class="list__item">Under 2 weeks delivery</li>
+                          <li class="list__item">Best responsives designs</li>
+                       </ul>
+                       <button class="btn btn--outline btn--block">BUY NOW</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="plan plan--popular">
+            <div data-aos="zoom-in-down" data-aos-duration="4000">
+                <div class="card card--primary">
+                  <header class="card__header">
+                   <h3 class="plan__name">entry</h3>
+                   <span class="plan__price">$14</span>
+                   <span class="plan__billing-cycle">/month</span>
+                   <span class="badges badges--primary badges--small">10%off</span>
+                   <span class="plan__description">east start on the cloud</span>
+                  </header>
+                  <div class="card__body">
+                      <ul class="list list--tick">
+                          <li class="list__item">Unlimited websites</li>
+                          <li class="list__item">Unlimited bandwidths</li>
+                          <li class="list__item">Under 2 weeks delivery</li>
+                          <li class="list__item">Best responsives designs</li>
+                       </ul>
+                       <button class="btn btn--outline btn--block">BUY NOW</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="plan">
+            <div data-aos="zoom-in" data-aos-duration="4000">
+                <div class="card card--secondary">
+                  <header class="card__header">
+                   <h3 class="plan__name">entry</h3>
+                   <span class="plan__price">$14</span>
+                   <span class="plan__billing-cycle">/month</span>
+                   <span class="badges badges--secondary badges--small">10%off</span>
+                   <span class="plan__description">east start on the cloud</span>
+                  </header>
+                  <div class="card__body">
+                      <ul class="list list--tick">
+                          <li class="list__item">Unlimited websites</li>
+                          <li class="list__item">Unlimited bandwidths</li>
+                          <li class="list__item">Under 2 weeks delivery</li>
+                          <li class="list__item">Best responsives designs</li>
+                       </ul>
+                       <button class="btn btn--outline btn--block">BUY NOW</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="block container">
+    <header class="block__header">
+        <h2 data-aos="flip-up" data-aos-duration="2000">Elevate Your Online Presence with Our Expertise</h2>
+        <p data-aos="zoom-in-left" data-aos-duration="2000">"Transform your vision into a stunning website with our professional design and development services. Let us bring your ideas to life and enhance your online presence."</p>
+    </header>
+       <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-up-right" data-aos-duration="1000">
+            <span class="icon-container">
+                <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#easy"></use>
+                </svg>
+            </span>
+            <h3 class="feature__heading">super easy to use</h3>
+            <p>"Create a standout website effortlessly with our user-friendly design solutions. We make building your online presence simple and effective, so you can focus on what matters most."</p>
+            <a href="#" class="link-arrow">LEARN MORE</a>
+        </div>
+        <picture>
+            <source
+        type="image/webp"
+        srcset="images/easy.webp">
+            <source
+        type="image/jpg"
+        srcset="images/easy.jpg">
+        <img class="feature__image" data-aos="fade-down" data-aos-duration="1000" src="images/easy.jpg" alt="">
+        </picture>
+       </article>
+       <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="zoom-out-down" data-aos-duration="1000">
+            <span class="icon-container">
+                <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#computer"></use>
+                </svg>
+            </span>
+            <h3 class="feature__heading">simply fast websites</h3>
+            <p>"Get a sleek, high-performance website up and running quickly. Our streamlined process ensures rapid results without sacrificing quality, so you can launch your online presence in no time."</p>
+            <a href="#" class="link-arrow">LEARN MORE</a>
+        </div>
+        <picture>
+            <source
+        type="image/webp"
+        srcset="images/fast.webp">
+            <source
+        type="image/jpg"
+        srcset="images/fast.jpg">
+        <img class="feature__image" data-aos="zoom-in" data-aos-duration="1000" src="images/fast.jpg" alt="">
+        </picture>
+       </article>
+       <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="slide-up" data-aos-duration="1000">
+            <span class="icon-container">
+                <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#growth"></use>
+                </svg>
+            </span>
+            <h3 class="feature__heading">Scalable and flexible</h3>
+            <p>"Build a website that's both scalable and flexible, adapting seamlessly to your growing needs. Our solutions ensure your site evolves with your business, offering versatility and robust performance.".</p>
+            <a href="#" class="link-arrow">LEARN MORE</a>
+        </div>
+        <picture>
+            <source
+        type="image/webp"
+        srcset="images/flex.webp">
+            <source
+        type="image/jpg"
+        srcset="images/flex.jpg">
+        <img class="feature__image-2" data-aos="zoom-out" data-aos-duration="1000" src="images/flex.jpg" alt="">
+        </picture>
+       </article>
+       <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="slide-up" data-aos-duration="1000">
+            <span class="icon-container">
+                <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#clock"></use>
+                </svg>
+            </span>
+            <h3 class="feature__heading">24/7 expert support</h3>
+            <p>"Experience round-the-clock expert support with our dedicated team, available 24/7 to assist you with any questions or issues. We're here to ensure your website runs smoothly at all times."</p>
+            <a href="#" class="link-arrow">LEARN MORE</a>
+        </div>
+        <picture>
+            <source
+        type="image/webp"
+        srcset="images/support.webp">
+            <source
+        type="image/jpg"
+        srcset="images/support.jpg">
+        <img class="feature__image" data-aos="fade-up" data-aos-duration="1000" src="images/support.jpg" alt="">
+        </picture>
+       </article>
+   </section>
+   <section class="block block--dark block--skewed-right block-showcase">
+    <header class="block__header">
+        <h2 class="block__heading">Highlight Your Achievements with Our Expertise</h2>
+    </header>
+    <div class="container grid grid--1x2">
+    <picture class="block-showcase__image">
+        <source type="image/webp" srcset="images/ipad@2x.webp">
+        <source type="image/png" srcset="imgaes/ipad.png">
+        <img data-aos="fade-up-right" data-aos-duration="1500" src="images/ipad.png" alt="">
+    </picture>
+    <ul data-aos="zoom-in-right" data-aos-duration="1500" class="list">
+        <li>
+            <div class="media">
+                <div class="media__image">
+                      <svg class="icon icon--primary">
+                          <use xlink:href="images/sprite.svg#settings"></use>
+                      </svg>
+                </div>
+                 <div class="media__body">
+                  <h3 class="media__title block__heading">User-Centric Approach</h3>
+                  <p>"Prioritize your visitors with our user-focused design philosophy. We create intuitive and engaging websites that cater to your audience's needs, ensuring a satisfying and memorable online experience."</p>
+                 </div>
+            </div>
+        </li>
+        <li>
+            <div class="media">
+                <div class="media__image">
+                      <svg class="icon icon--primary">
+                          <use xlink:href="images/sprite.svg#growth"></use>
+                      </svg>
+                </div>
+                 <div class="media__body">
+                  <h3 class="media__title block__heading">Reliable Performance</h3>
+                  <p>"Enjoy a fast and dependable website with our top-notch performance optimization. We focus on speed and stability, so your site remains reliable and responsive, delivering a smooth experience for your visitors."</p>
+                 </div>
+            </div>
+        </li>
+        <li>
+            <div class="media">
+                <div class="media__image">
+                      <svg class="icon icon--primary">
+                          <use xlink:href="images/sprite.svg#easy"></use>
+                      </svg>
+                </div>
+                 <div class="media__body">
+                  <h3 class="media__title block__heading">Seamless Integration</h3>
+                  <p>"Effortlessly connect your website with essential tools and services. Our integration solutions ensure that your website works harmoniously with your existing systems, enhancing functionality and efficiency."</p>
+                 </div>
+            </div>
+        </li>
+    </ul>
+    </div>
+  </section>
+  <section data-aos="zoom-in" data-aos-duration="2000" class="block">
+    <header class="block__header">
+        <h2>Discover What Our Clients Are Raving About</h2>
+        <p>"Our clients love the exceptional service and outstanding results we deliver. Hear their success stories!"</p>
+    </header>
+    <div class="container">
+        <div class="card testimonial">
+            <div class="grid grid--1x2">
+                <div class="testimonial__image">
+                    <img src="images/testimonial.jpg" alt="A happy smiling customer">
+                    <span class="icon-container icon-container--accent">
+                        <svg class="icon icon--white icon--small">
+                            <use xlink:href="images/sprite.svg#quotes"></use>
+                        </svg>
+                    </span>
+                </div>
+                <blockquote class="quote">
+                    <p class="quote__text">"Working with this team was a game-changer for our business. Their expertise and dedication transformed our website, driving remarkable growth and engagement. Highly recommend!"</p>
+                    <footer>
+                        <div class="media">
+                            <div class="media__image">
+                                  <svg class="icon icon--primary quote__line">
+                                      <use xlink:href="images/sprite.svg#line"></use>
+                                  </svg>
+                            </div>
+                             <div class="media__body">
+                              <h3 class="media__title quote__author">John Smith</h3>
+                              <p class="quote__organization">ABC Company</p>
+                             </div>
+                        </div>  
+                    </footer>
+                 </blockquote>
+            </div>
+          </div>
+    </div>
+  </section>
+  <div data-aos="zoom-in-up" data-aos-duration="1500" class="container">
+      <div class="callout callout--primary callout-signup">
+        <div class="grid grid--1x2">
+            <div class="callout__content">
+                <h2 class="callout__heading">Ready to get started?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquid tempora excepturi soluta! Veniam, voluptas facilis quasi quos ratione facere!
+                </p>
+            </div>
+                <a href="#" class="btn btn--secondary btn--stretched">GET STARTED</a>
+        </div>
+      </div>
+  </div>
+  <footer class="block block--dark footer">
+    <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+            <div class="collapsible__header">
+                <h2 class="collapsible__heading block__heading footer__heading">PRODUCTS</h2>
+                        <img src="images/chevron.svg" alt="" class="icon icon--white collapsible__chevron"> 
+            </div>
+            <div class="collapsible__content">
+                <ul class="list">
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">E-commerce Solutions</a></li>
+                    <li><a href="#">SEO Services</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="collapsible footer__section">
+            <div class="collapsible__header">
+                <h2 class="collapsible__heading block__heading footer__heading">COMPANY</h2>
+                        <img src="images/chevron.svg" alt="" class="icon icon--white collapsible__chevron"> 
+            </div>
+            <div class="collapsible__content">
+                <ul class="list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="collapsible footer__section">
+            <div class="collapsible__header">
+                <h2 class="collapsible__heading block__heading footer__heading">SUPPORT</h2>
+                        <img src="images/chevron.svg" alt="" class="icon icon--white collapsible__chevron"> 
+            </div>
+            <div class="collapsible__content">
+                <ul class="list">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Knowledge Base</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="collapsible footer__section">
+            <div class="collapsible__header">
+                <h2 class="collapsible__heading block__heading footer__heading">Why Choose Us</h2>
+                        <img src="images/chevron.svg" alt="" class="icon icon--white collapsible__chevron"> 
+            </div>
+            <div class="collapsible__content">
+                <ul class="list">
+                    <li><a href="#">Expert Team</a></li>
+                    <li><a href="#">Customer-Centric</a></li>
+                    <li><a href="#">Proven Results</a></li>
+                </ul>
+            </div>
+        </section>
+         <div class="footer__brand">
+            <img class="z--icon nav__brand" src="images/file-removebg-preview.png" alt="">
+            <p class="footer__copyright">copyright 2024 LOOTER</p>
+         </div>
+    </div>
+ </footer>
 <script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>    
 </html>
